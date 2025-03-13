@@ -57,5 +57,5 @@ for p in document.paragraphs:
         print("</p>", file=f)
     if p.text == separator:
         i = 0
-    if p.style.startswith("Heading") or p.style == "Subchapter" or p.style == "Title":
+    if p.style.name.startswith("Heading") or p.style.name == "Subchapter" or p.style.name == "Title":
         i = 0
